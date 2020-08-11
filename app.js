@@ -20,6 +20,9 @@ app = () => {
 			if(song.paused){
 				song.src = this.getAttribute("data-sound");
 				video.src = this.getAttribute("data-video");
+				//New Feature
+				let colorvalue = this.getAttribute("data-color");
+				circle.setAttribute("stroke",colorvalue);
 			}
 		})
 	})
